@@ -47,11 +47,13 @@ layout: default
 <div class="section" id="golden-rule">
   <div class="col">
     <h2>Golden rule</h2>
-    <p>Enforce these, or your own, agreed upon guidelines at all times. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/mdo/code-guide/issues/new">open an issue on GitHub</a>.</p>
+    <!-- <p>Enforce these, or your own, agreed upon guidelines at all times. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/mdo/code-guide/issues/new">open an issue on GitHub</a>.</p> -->
+    <p>ဒီအများလက်ခံထားတဲ့ (သို့) ကိုယ်ပိုင် စည်းမျည်းတွေကို အမြဲသုံးဖို့ အားပေးပါရစေ။ သေးသေးလေးပဲဖြစ်ဖြစ် အကြီးကြီးပဲဖြစ်ဖြစ် အမှားပါခဲ့ရင် အသိပေးဖို့ တောင်းဆိုပါတယ်။ ဒီ guide မှာ ထပ်ထည့်ချင်ရင် သို့ ကူညီချင်ရင် ကျေးဇူးပြုပြီး <a href="https://github.com/mdo/code-guide/issues/new">Github မှာ issue ဖွင့်ပေးပါ</a>။</p>
   </div>
   <div class="col">
     <blockquote>
-      <p>Every line of code should appear to be written by a single person, no matter the number of contributors.</p>
+      <!-- <p>Every line of code should appear to be written by a single person, no matter the number of contributors.</p> -->
+      <p>ပါဝင်တဲ့လူ(contributor) ဘယ်လောက်များများ code လိုင်းကြောင်းတိုင်းက တစ်ယောက်တည်း ရေးထားသလို ဖြစ်နေပါစေ။</p>
     </blockquote>
   </div>
 </div>
@@ -66,11 +68,16 @@ layout: default
   <div class="col">
     <h3>Syntax</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
-      <li>Nested elements should be indented once (two spaces).</li>
-      <li>Always use double quotes, never single quotes, on attributes.</li>
-      <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li>
-      <li>Don’t omit optional closing tags (e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
+      <!-- <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li> -->
+      <li>Environment ပြောင်းသွားလဲ အမြဲပုံစံတူပေါ်အောင် space နှစ်ချက်နဲ့ soft tab ကိုသုံးပါ။</li>
+      <!-- <li>Nested elements should be indented once (two spaces).</li> -->
+      <li>Nested element တွေကို indent တစ်ခါ(space နှစ်ချက်)ပဲလုပ်ပါ။</li>
+      <!-- <li>Always use double quotes, never single quotes, on attributes.</li> -->
+      <li>Attribute တွေမှာ အမြဲ double quotes သုံးပါ။ Single quotes ဘယ်တော့မှ မသုံးပါနဲ့။</li>
+      <!-- <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li> -->
+      <li>Self-closing element တွေမှာ အဆုံးပိတ် slash မထည့်ပါနဲ့။ <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a>အရ သူတို့ကို ချန်ထားလို့ရပါတယ်။</li>
+      <!-- <li>Don’t omit optional closing tags (e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li> -->
+      <li>ချန်ထားလို့ရတဲ့ closing tags တွေကို မချန်ခဲ့ပါနဲ့။ (ဥပမာ၊ <code>&lt;/li&gt;</code> သို့ <code>&lt;/body&gt;</code>).</li>
     </ul>
   </div>
   <div class="col">
@@ -81,7 +88,8 @@ layout: default
 <div class="section" id="html-doctype">
   <div class="col">
     <h3>HTML5 doctype</h3>
-    <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+    <!-- <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p> -->
+    <p>HTML page တိုင်းမှာ doctype နဲ့စပြီး တတ်နိုင်သမျှ browser အားလုံးမှာ စံအဖြစ်နဲ့ တသက်မတ်တည်း ပေါ်အောင်လုပ်ပါ။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
@@ -93,10 +101,13 @@ layout: default
     <h3>Language attribute</h3>
     <p>From the HTML5 spec:</p>
     <blockquote>
-      <p>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p>
+      <!-- <p>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p> -->
+      <p>Root html element မှာ lang attribute ထည့်ရေးခြင်းအားဖြင့် document ရဲ့ ဘာသာစကားကို သတ်မှတ်ဖို့ အားတွန်းပါတယ်။ ထိုသို့လုပ်ခြင်းအားဖြင့် အသံထွက်ဖတ်တဲ့ toolတွေက ဘယ်ဘာသာနဲ့ အသံထွက်ရမလဲဆိုတာ၊ ဘာသာပြန်စနစ်တွေကလဲ ဘယ်လို စည်းမျည်းသုံးရမလဲဆိုတာ အစရှိသဖြင့် သိနိုင်ပါတယ်။</p>
     </blockquote>
-    <p>Read more about the <code>lang</code> attribute <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>.</p>
-    <p>Head to Sitepoint for a <a href="http://reference.sitepoint.com/html/lang-codes">list of language codes</a>.</p>
+    <!-- <p>Read more about the <code>lang</code> attribute <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>.</p> -->
+    <p><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">Spec ထဲမှာ</a> lang attribute အကြောင်း ဆက်လက်ဖတ်ရှုနိုင်ပါတယ်။</p>
+    <!-- <p>Head to Sitepoint for a <a href="http://reference.sitepoint.com/html/lang-codes">list of language codes</a>.</p> -->
+    <p><a href="http://reference.sitepoint.com/html/lang-codes">ဘာသာစကား အတိုကောက် code စာရင်း</a>ကိုတော့ Sitepoint မှာ သွားရောက်ကြည့်ရှုနိုင်ပါတယ်။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/lang.html %}{% endhighlight %}
