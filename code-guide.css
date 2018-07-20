@@ -26,7 +26,7 @@ layout: nil
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "MON3 Anonta 1";
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -58,7 +58,7 @@ html {
 
 body {
   margin: 0;
-  font: 1rem/1.5 "PT Sans", sans-serif;
+  font: 1rem/1.5 "MON3 Anonta 1", sans-serif;
   color: #5a5a5a;
 }
 
