@@ -18,8 +18,15 @@ layout: nil
   font-style: normal;
 }
 
+@font-face {
+  font-family:'MON3 Anonta 1';
+    src:local('MON3 Anonta 1'), url('font/mon3.woff') format('woff'), url('font/mon3.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
+  font-family: "MON3 Anonta 1";
   font-style: normal;
   font-weight: normal;
   speak: none;
