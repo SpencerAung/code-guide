@@ -117,8 +117,10 @@ layout: default
 <div class="section" id="html-ie-compatibility-mode">
   <div class="col">
     <h3>IE compatibility mode</h3>
-    <p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with <strong>edge mode</strong>.</p>
+    <!-- <p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with <strong>edge mode</strong>.</p> -->
+    <p>Page ကို ဘယ် IE version သုံးပြီးပြရမလဲ​ဆိုတာ <code>&lt;meta&gt;</code> tag နဲ့ ဖော်ပြခွင့်ကို Internet Explorer မှာ ခွင့်ပြုထားပါတယ်။ တခြားအကြောင်းအရာမရှိရင် IE ကို နောက်ဆုံးပေါ် <strong>edge mode</strong>သုံးဖို့ လမ်းညွန်စေချင်ပါတယ်။</p>
     <p>For more information, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">read this awesome Stack Overflow article</a>.</p>
+    <p>ပိုပြီးသိချင်ရင် <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">ဒီ အမိုက်စား Stack Overflow ဆောင်းပါးမှာသာ ဖတ်ကြည့်ပါတော့</a>။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/ie-compatibility-mode.html %}{% endhighlight %}
@@ -128,7 +130,8 @@ layout: default
 <div class="section" id="html-encoding">
   <div class="col">
     <h3>Character encoding</h3>
-    <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).</p>
+    <!-- <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).</p> -->
+    <p>Content တွေ ကောင်းကောင်းမွန်မွန်ပေါ်အောင် အလွယ်တကူ character encoding ကို သီးသန့်ကြေငြာပြီး စိတ်ချလက်ချသုံးနိုင်ပါတယ်။ အဲ့လိုဆိုရင် HTML ထဲမှာ character entities တွေ မသုံးလဲရပါတယ်။ သူတို့ encoding က documentနဲ့ ညီရင်ပေါ့ (ပုံမှန်အားဖြင့် UTF-8 ပါ)။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
@@ -138,12 +141,16 @@ layout: default
 <div class="section" id="html-style-script">
   <div class="col">
     <h3>CSS and JavaScript includes</h3>
-    <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
+    <!-- <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p> -->
+    <p>HTML5 spec အရ၊ CSS နဲ့ Javascript files တွေထည့်တဲ့ အခါမှာ ပုံမှန်အားဖြင့် type ကို ကြေငြာပေးစရာ မလိုပါဘူး။ သူတို့တွေအတွက် <code>text/css</code> နဲ့ <code>text/javascript</code> တွေက default တန်ဖိုးတွေ မို့လို့ပါ။</p>
     <h4>HTML5 spec links</h4>
     <ul>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Using style</a></li>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Using script</a></li>
+      <!-- <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li> -->
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Link အသုံးပြုပုံ</a></li>
+      <!-- <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Using style</a></li> -->
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Style အသုံးပြုပုံ</a></li>
+      <!-- <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Using script</a></li> -->
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Script အသုံးပြုပုံ</a></li>
     </ul>
   </div>
   <div class="col">
@@ -154,14 +161,16 @@ layout: default
 <div class="section" id="html-practicality">
   <div class="col">
     <h3>Practicality over purity</h3>
-    <p>Strive to maintain HTML standards and semantics, but not at the expense of practicality. Use the least amount of markup with the fewest intricacies whenever possible.</p>
+    <!-- <p>Strive to maintain HTML standards and semantics, but not at the expense of practicality. Use the least amount of markup with the fewest intricacies whenever possible.</p> -->
+    <p>HTML စံနှုန်နဲ့ လုပ်ထုံးတွေကို လိုက်နာဖို့ ကြိုးစားပါ။ ဒါပေမဲ့ လက်တွေ့မှာ အသုံးမဝင်တာတွေကိုတော့ လိုက်လုပ်စရာမလိုပါဘူး။ တတ်နိုင်သမျှ markup နည်းနည်းနဲ့ ရှင်းရှင်းလင်းလင်း ရေးပါ။</p>
   </div>
 </div>
 
 <div class="section" id="html-attribute-order">
   <div class="col">
     <h3>Attribute order</h3>
-    <p>HTML attributes should come in this particular order for easier reading of code.</p>
+    <!-- <p>HTML attributes should come in this particular order for easier reading of code.</p> -->
+    <p>ဖတ်ရတာလွယ်အောင် HTML attributes တွေကို အစဥ်လိုက် သတ်သတ်မှတ်မှတ် ရေးပါ။</p>
     <ul>
       <li><code>class</code></li>
       <li><code>id</code>, <code>name</code></li>
@@ -170,7 +179,8 @@ layout: default
       <li><code>title</code>, <code>alt</code></li>
       <li><code>role</code>, <code>aria-*</code></li>
     </ul>
-    <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
+    <!-- <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p> -->
+    <p>Class တွေက ပြန်သုံးလို့ ကောင်းတဲ့ component တွေဖြစ်တဲ့အတွက် သူတို့က အရင်လာရပါမယ်။ Id တွေက အတိအကျသုံးရတဲ့ အရာမို့လို့ လျော့သုံးသင့်ပါတယ် (ဥပမာ၊ in-page bookmarks)။ ဒါကြောင့် သူတို့က ဒုတိယ အနေနဲ့ လာပါမယ်။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/attribute-order.html %}{% endhighlight %}
@@ -180,16 +190,22 @@ layout: default
 <div class="section" id="html-boolean-attributes">
   <div class="col">
     <h3>Boolean attributes</h3>
-    <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p>
-    <p>For further reading, consult the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
+    <!-- <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p> -->
+    <p>Boolean attribute ဆိုတာ value သတ်မှတ်ပေးစရာမလိုတဲ့အရာပါ။ XHTML မှာ value ထည့်ပေးဖို့လိုပေမဲ့ HTML5 မှာတော့ မလိုပါဘူး။</p>
+    <!-- <p>For further reading, consult the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p> -->
+    <p>ဒီ့ထက် ပိုဖတ်ချင်ရင်တော့ <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG ရဲ့ on boolean attributes ဆိုတဲ့ အပိုင်းကို ကြည့်ပါ</a>:</p>
     <blockquote>
-      <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
+      <!-- <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p> -->
+      <p>Element တစ်ခုမှာ boolean attribute ပါရင် true value လို့ သတ်မှတ်ပါတယ်။ မပါရင်တော့ false value လို့ မှတ်ယူပါတယ်။</p>
     </blockquote>
-    <p>If you <em>must</em> include the attribute's value, and <strong>you don't need to</strong>, follow this WhatWG guideline:</p>
+    <!-- <p>If you <em>must</em> include the attribute's value, and <strong>you don't need to</strong>, follow this WhatWG guideline:</p> -->
+    <p><strong>မလိုအပ်ပေမဲ့</strong> attribute value ကို <em>ထည့်မှရမယ်</em>ဆိုရင်တော့ ဒီ WhatWG guideline အတိုင်းလိုက်လုပ်ပါ။</p>
     <blockquote>
-      <p>If the attribute is present, its value must either be the empty string or [...] the attribute's canonical name, with no leading or trailing whitespace.</p>
+      <!-- <p>If the attribute is present, its value must either be the empty string or [...] the attribute's canonical name, with no leading or trailing whitespace.</p> -->
+      <p>Attribute ထည့်မယ်ဆိုရင် သူ့ value သည် string အလွတ် သို့မဟုတ် [...] attribute ရဲ့ အမည် (အစနဲ့ အဆုံးမှာ မမြင်ရတဲ့ whitespace တွေမပါပဲ) ဖြစ်ရပါမယ်။</p>
     </blockquote>
-    <p><strong>In short, don't add a value.</strong></p>
+    <!-- <p><strong>In short, don't add a value.</strong></p> -->
+    <p><strong>တိုတိုပြောရရင် value တစ်ခုမှ မထည့်ပါနဲ့။</strong></p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/boolean-attributes.html %}{% endhighlight %}
@@ -199,7 +215,8 @@ layout: default
 <div class="section" id="html-reducing-markup">
   <div class="col">
     <h3>Reducing markup</h3>
-    <p>Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. Take the following example:</p>
+    <!-- <p>Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. Take the following example:</p> -->
+    <p>HTML ရေးရင် မလိုအပ်တဲ့ paraent element တွေကို ဖြစ်နိုင်သမျှ လျော့သုံးပါ။ အဲ့လို HTML နည်းကောင်းလုပ်ဖို့က အကြီမ်ကြိမ် ပြန်စစ် ပြန်ပြင်ဖို့ လိုပါလိမ့်မယ်။ အောက်ပါ ဥပမာကို ကြည့်ပါ။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/reducing-markup.html %}{% endhighlight %}
@@ -209,7 +226,8 @@ layout: default
 <div class="section" id="html-javascript">
   <div class="col">
     <h3>JavaScript generated markup</h3>
-    <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less performant. Avoid it whenever possible.</p>
+    <!-- <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less performant. Avoid it whenever possible.</p> -->
+    <p>Javascript file ထဲမှာ markup ရောရေးထားရင် ရှာရခက်၊ ပြင်ရခက်၊ ပြီးတော့ performance လဲ လျော့နည်းစေပါတယ်။ တတ်နိုင်သမျှ ရှောင်ပါ။ </p>
   </div>
 </div>
 
@@ -223,20 +241,34 @@ layout: default
   <div class="col">
     <h3>Syntax</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
-      <li>When grouping selectors, keep individual selectors to a single line.</li>
-      <li>Include one space before the opening brace of declaration blocks for legibility.</li>
-      <li>Place closing braces of declaration blocks on a new line.</li>
-      <li>Include one space after <code>:</code> for each declaration.</li>
-      <li>Each declaration should appear on its own line for more accurate error reporting.</li>
-      <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li>
-      <li>Comma-separated property values should include a space after each comma (e.g., <code>box-shadow</code>).</li>
-      <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).</li>
-      <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li>
-      <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
-      <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
-      <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
-      <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li>
+      <!-- <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li> -->
+      <li>Environment ပြောင်းသွားလဲ အမြဲပုံစံတူပေါ်အောင် space နှစ်ချက်နဲ့ soft tab ကိုသုံးပါ။</li>
+      <!-- <li>When grouping selectors, keep individual selectors to a single line.</li> -->
+      <li>Selector တွေကို ပေါင်းရေးရင် တစ်လိုင်းမှာ selector တစ်ခုပဲ ရေးပါ။</li>
+      <!-- <li>Include one space before the opening brace of declaration blocks for legibility.</li> -->
+      <li>Block ကြေငြာရင် ဖတ်ရတာ ရှင်းလင်းအောင် ကွင်းစ အရှေ့မှာ space တစ်ခုခံပေးပါ။</li>
+      <!-- <li>Place closing braces of declaration blocks on a new line.</li> -->
+      <li>Block ကွင်းပိတ်ကို လိုင်းအသစ်မှာ ရေးပါ။</li>
+      <!-- <li>Include one space after <code>:</code> for each declaration.</li> -->
+      <li>Declaration တိုင်းမှာ <code>:</code> အဆုံးမှာ space တစ်ခုထည့်ပေးပါ။</li>
+      <!-- <li>Each declaration should appear on its own line for more accurate error reporting.</li> -->
+      <li>Error report မှာ တိတိကျကျသိရအောင် declaration တိုင်းကို တစ်လိုင်းစီခွဲပြီး ရေးပေးပါ။</li>
+      <!-- <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li> -->
+      <li>Declaration တိုင်းကို semi-colon နဲ့ ပိတ်ပေးပါ။ နောက်ဆုံး declaration ကတော့ ချန်ခဲ့လို့ရပါတယ်။ ဒါပေမဲ့ error ပိုဖြစ်တတ်ပါတယ်။</li>
+      <!-- <li>Comma-separated property values should include a space after each comma (e.g., <code>box-shadow</code>).</li> -->
+      <li>Comma ခံရေးရတဲ့ value တွေမှာ comma တစ်ခုပြီးတိုင်း space တစ်ခုထည့်ပေးပါ။ (ဥပမာ၊ <code>box-shadow</code>)</li>
+      <!-- <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).</li> -->
+      <li><code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, သို့ <code>rect()</code> တွေရဲ့ <em>အတွင်း</em>က value တွေမှာတော့ comma နောက်မှာ space မထည့်ပါနဲ့။ ဒီနည်းအားဖြင့် color value တွေနဲ့ တစ်ခြား property value တွေကို ခွဲခြားရလွယ်ကူစေပါတယ်။</li>
+      <!-- <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li> -->
+      <li>Color parameter နဲ့ property value တွေကို သုညနဲ့ စမရေးပါနဲ့။ (ဥပမာ၊ <code>0.5</code> အစား <code>.5</code>၊ <code>-0.5px</code> အစား <code>-.5px</code></li>
+      <!-- <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li> -->
+      <li>Hex value အားလုံးကို စာလုံးအသေးနဲ့ ရေးပါ။ ဥပမာ၊ <code>#fff</code>။  စာလုံးအသေးတွေက တစ်ခုနဲ့ တစ်ခု ပုံသဏ္ဌာန်မတူတဲ့အတွက် Document ကို တစ်ချက်ကြည့်ရုံနဲ့ အလွယ်တကူ ခွဲမြင်နိုင်လို့ပါ။</li>
+      <!-- <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li> -->
+      <li>ရေးလို့ ရတဲ့နေရာတိုင်း hex value တွေကို အတိုကောက်ရေးပါ။ ဥပမာ၊ <code>#ffffff</code> အစား <code>#fff</code>။</li>
+      <!-- <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li> -->
+      <li>Selector ထဲက attribute value တွေကို quote နဲ့ရေးပေးပါ။ ဥပမာ၊ <code>input[type="text"]</code>။ <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">တစ်ချို့နေရာတွေမှာပဲ ချွင်းချက်ရှိပြီး</a> တသတ်မတ်တည်းဖြစ်ဖို့ ကောင်းတဲ့ အကျင့်တစ်ခုပါ။</li>
+      <!-- <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li> -->
+      <li>သုည တန်ဖိုးတွေမှာ unit မထည့်ပါနဲ့။ ဥပမာ၊ <code>margin: 0px;</code> အစား <code>margin: 0;</code>။</li>
     </ul>
     <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
   </div>
