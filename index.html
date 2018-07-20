@@ -69,11 +69,11 @@ layout: default
     <h3>Syntax</h3>
     <ul>
       <!-- <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li> -->
-      <li>Environment ပြောင်းသွားလဲ အမြဲပုံစံတူပေါ်အောင် space နှစ်ချက်နဲ့ soft tab ကိုသုံးပါ။</li>
+      <li>Environment ပြောင်းသွားလည်း အမြဲပုံစံတူပေါ်အောင် space နှစ်ချက်နဲ့ soft tab ကိုသုံးပါ။</li>
       <!-- <li>Nested elements should be indented once (two spaces).</li> -->
       <li>Nested element တွေကို indent တစ်ခါ(space နှစ်ချက်)ပဲလုပ်ပါ။</li>
       <!-- <li>Always use double quotes, never single quotes, on attributes.</li> -->
-      <li>Attribute တွေမှာ အမြဲ double quotes သုံးပါ။ Single quotes ဘယ်တော့မှ မသုံးပါနဲ့။</li>
+      <li>Attribute တွေမှာ အမြဲ double quote သုံးပါ။ Single quote ဘယ်တော့မှ မသုံးပါနဲ့။</li>
       <!-- <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li> -->
       <li>Self-closing element တွေမှာ အဆုံးပိတ် slash မထည့်ပါနဲ့။ <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a>အရ သူတို့ကို ချန်ထားလို့ရပါတယ်။</li>
       <!-- <li>Don’t omit optional closing tags (e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li> -->
@@ -89,7 +89,7 @@ layout: default
   <div class="col">
     <h3>HTML5 doctype</h3>
     <!-- <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p> -->
-    <p>HTML page တိုင်းမှာ doctype နဲ့စပြီး တတ်နိုင်သမျှ browser အားလုံးမှာ စံအဖြစ်နဲ့ တသက်မတ်တည်း ပေါ်အောင်လုပ်ပါ။</p>
+    <p>HTML page တိုင်းမှာ doctype နဲ့စပြီး တတ်နိုင်သမျှ browser အားလုံးမှာ စံအဖြစ်နဲ့ တသမတ်တည်း ပေါ်အောင်လုပ်ပါ။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
@@ -102,7 +102,7 @@ layout: default
     <p>From the HTML5 spec:</p>
     <blockquote>
       <!-- <p>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p> -->
-      <p>Root html element မှာ lang attribute ထည့်ရေးခြင်းအားဖြင့် document ရဲ့ ဘာသာစကားကို သတ်မှတ်ဖို့ အားတွန်းပါတယ်။ ထိုသို့လုပ်ခြင်းအားဖြင့် အသံထွက်ဖတ်တဲ့ toolတွေက ဘယ်ဘာသာနဲ့ အသံထွက်ရမလဲဆိုတာ၊ ဘာသာပြန်စနစ်တွေကလဲ ဘယ်လို စည်းမျည်းသုံးရမလဲဆိုတာ အစရှိသဖြင့် သိနိုင်ပါတယ်။</p>
+      <p>Root html element မှာ lang attribute ထည့်ရေးခြင်းအားဖြင့် document ရဲ့ ဘာသာစကားကို သတ်မှတ်ဖို့ တိုက်တွန်းပါတယ်။ ထိုသို့လုပ်ခြင်းအားဖြင့် အသံထွက်ဖတ်တဲ့ စနစ်တွေက ဘယ်ဘာသာနဲ့ အသံထွက်ရမလဲဆိုတာ၊ ဘာသာပြန်စနစ်တွေကလည်း ဘယ်လို စည်းမျည်းသုံးရမလဲဆိုတာ အစရှိသဖြင့် သိနိုင်ပါတယ်။</p>
     </blockquote>
     <!-- <p>Read more about the <code>lang</code> attribute <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>.</p> -->
     <p><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">Spec ထဲမှာ</a> lang attribute အကြောင်း ဆက်လက်ဖတ်ရှုနိုင်ပါတယ်။</p>
@@ -118,9 +118,9 @@ layout: default
   <div class="col">
     <h3>IE compatibility mode</h3>
     <!-- <p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with <strong>edge mode</strong>.</p> -->
-    <p>Page ကို ဘယ် IE version သုံးပြီးပြရမလဲ​ဆိုတာ <code>&lt;meta&gt;</code> tag နဲ့ ဖော်ပြခွင့်ကို Internet Explorer မှာ ခွင့်ပြုထားပါတယ်။ တခြားအကြောင်းအရာမရှိရင် IE ကို နောက်ဆုံးပေါ် <strong>edge mode</strong>သုံးဖို့ လမ်းညွန်စေချင်ပါတယ်။</p>
+    <p>Page ကို ဘယ် IE version သုံးပြီး ပြရမလဲ ဆိုတာ <code>&lt;meta&gt;</code> tag နဲ့ ဖော်ပြခွင့်ကို Internet Explorer မှာ ခွင့်ပြုထားပါတယ်။ တခြားအကြောင်းအရာမရှိရင် IE ကို နောက်ဆုံးပေါ် <strong>edge mode</strong>သုံးဖို့ လမ်းညွန်စေချင်ပါတယ်။</p>
     <p>For more information, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">read this awesome Stack Overflow article</a>.</p>
-    <p>ပိုပြီးသိချင်ရင် <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">ဒီ အမိုက်စား Stack Overflow ဆောင်းပါးမှာသာ ဖတ်ကြည့်ပါတော့</a>။</p>
+    <p>ပိုပြီးသိချင်ရင် <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">ဒီ အမိုက်စား Stack Overflow ဆောင်းပါးမှာသာ ဖတ်ကြည့်ပါ</a>။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/ie-compatibility-mode.html %}{% endhighlight %}
@@ -131,7 +131,7 @@ layout: default
   <div class="col">
     <h3>Character encoding</h3>
     <!-- <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).</p> -->
-    <p>Content တွေ ကောင်းကောင်းမွန်မွန်ပေါ်အောင် အလွယ်တကူ character encoding ကို သီးသန့်ကြေငြာပြီး စိတ်ချလက်ချသုံးနိုင်ပါတယ်။ အဲ့လိုဆိုရင် HTML ထဲမှာ character entities တွေ မသုံးလဲရပါတယ်။ သူတို့ encoding က documentနဲ့ ညီရင်ပေါ့ (ပုံမှန်အားဖြင့် UTF-8 ပါ)။</p>
+    <p>Content တွေ ကောင်းကောင်းမွန်မွန်ပေါ်အောင် အလွယ်တကူ character encoding ကို သီးသန့်ကြေငြာပြီး စိတ်ချလက်ချသုံးနိုင်ပါတယ်။ အဲ့လိုဆိုရင် HTML ထဲမှာ character entities တွေ မသုံးလည်းရပါတယ်။ သူတို့ encoding က documentနဲ့ ညီရင်ပေါ့ (ပုံမှန်အားဖြင့် UTF-8 ပါ)။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
@@ -162,7 +162,7 @@ layout: default
   <div class="col">
     <h3>Practicality over purity</h3>
     <!-- <p>Strive to maintain HTML standards and semantics, but not at the expense of practicality. Use the least amount of markup with the fewest intricacies whenever possible.</p> -->
-    <p>HTML စံနှုန်နဲ့ လုပ်ထုံးတွေကို လိုက်နာဖို့ ကြိုးစားပါ။ ဒါပေမဲ့ လက်တွေ့မှာ အသုံးမဝင်တာတွေကိုတော့ လိုက်လုပ်စရာမလိုပါဘူး။ တတ်နိုင်သမျှ markup နည်းနည်းနဲ့ ရှင်းရှင်းလင်းလင်း ရေးပါ။</p>
+    <p>HTML စံနှုန်းနဲ့ လုပ်ထုံးတွေကို လိုက်နာဖို့ ကြိုးစားပါ။ ဒါပေမဲ့ လက်တွေ့မှာ အသုံးမဝင်တာတွေကိုတော့ လိုက်လုပ်စရာမလိုပါဘူး။ တတ်နိုင်သမျှ markup နည်းနည်းနဲ့ ရှင်းရှင်းလင်းလင်း ရေးပါ။</p>
   </div>
 </div>
 
@@ -227,7 +227,7 @@ layout: default
   <div class="col">
     <h3>JavaScript generated markup</h3>
     <!-- <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less performant. Avoid it whenever possible.</p> -->
-    <p>Javascript file ထဲမှာ markup ရောရေးထားရင် ရှာရခက်၊ ပြင်ရခက်၊ ပြီးတော့ performance လဲ လျော့နည်းစေပါတယ်။ တတ်နိုင်သမျှ ရှောင်ပါ။ </p>
+    <p>Javascript file ထဲမှာ markup ရောရေးထားရင် ရှာရခက်၊ ပြင်ရခက်၊ ပြီးတော့ performance လည်း လျော့နည်းစေပါတယ်။ တတ်နိုင်သမျှ ရှောင်ပါ။ </p>
   </div>
 </div>
 
@@ -242,7 +242,7 @@ layout: default
     <h3>Syntax</h3>
     <ul>
       <!-- <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li> -->
-      <li>Environment ပြောင်းသွားလဲ အမြဲပုံစံတူပေါ်အောင် space နှစ်ချက်နဲ့ soft tab ကိုသုံးပါ။</li>
+      <li>Environment ပြောင်းသွားလည်း အမြဲပုံစံတူပေါ်အောင် space နှစ်ချက်နဲ့ soft tab ကိုသုံးပါ။</li>
       <!-- <li>When grouping selectors, keep individual selectors to a single line.</li> -->
       <li>Selector တွေကို ပေါင်းရေးရင် တစ်လိုင်းမှာ selector တစ်ခုပဲ ရေးပါ။</li>
       <!-- <li>Include one space before the opening brace of declaration blocks for legibility.</li> -->
@@ -260,17 +260,18 @@ layout: default
       <!-- <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).</li> -->
       <li><code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, သို့ <code>rect()</code> တွေရဲ့ <em>အတွင်း</em>က value တွေမှာတော့ comma နောက်မှာ space မထည့်ပါနဲ့။ ဒီနည်းအားဖြင့် color value တွေနဲ့ တစ်ခြား property value တွေကို ခွဲခြားရလွယ်ကူစေပါတယ်။</li>
       <!-- <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li> -->
-      <li>Color parameter နဲ့ property value တွေကို သုညနဲ့ စမရေးပါနဲ့။ (ဥပမာ၊ <code>0.5</code> အစား <code>.5</code>၊ <code>-0.5px</code> အစား <code>-.5px</code></li>
+      <li>Color parameter နဲ့ property value တွေကို သုညနဲ့ စ မရေးပါနဲ့။ (ဥပမာ၊ <code>0.5</code> အစား <code>.5</code>၊ <code>-0.5px</code> အစား <code>-.5px</code></li>
       <!-- <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li> -->
       <li>Hex value အားလုံးကို စာလုံးအသေးနဲ့ ရေးပါ။ ဥပမာ၊ <code>#fff</code>။  စာလုံးအသေးတွေက တစ်ခုနဲ့ တစ်ခု ပုံသဏ္ဌာန်မတူတဲ့အတွက် Document ကို တစ်ချက်ကြည့်ရုံနဲ့ အလွယ်တကူ ခွဲမြင်နိုင်လို့ပါ။</li>
       <!-- <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li> -->
       <li>ရေးလို့ ရတဲ့နေရာတိုင်း hex value တွေကို အတိုကောက်ရေးပါ။ ဥပမာ၊ <code>#ffffff</code> အစား <code>#fff</code>။</li>
       <!-- <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li> -->
-      <li>Selector ထဲက attribute value တွေကို quote နဲ့ရေးပေးပါ။ ဥပမာ၊ <code>input[type="text"]</code>။ <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">တစ်ချို့နေရာတွေမှာပဲ ချွင်းချက်ရှိပြီး</a> တသတ်မတ်တည်းဖြစ်ဖို့ ကောင်းတဲ့ အကျင့်တစ်ခုပါ။</li>
+      <li>Selector ထဲက attribute value တွေကို quote နဲ့ ရေးပေးပါ။ ဥပမာ၊ <code>input[type="text"]</code>။ <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">တစ်ချို့နေရာတွေမှာပဲ ချွင်းချက်ရှိပြီး</a> တသတ်မတ်တည်းဖြစ်ဖို့ ကောင်းတဲ့ အကျင့်တစ်ခုပါ။</li>
       <!-- <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li> -->
       <li>သုည တန်ဖိုးတွေမှာ unit မထည့်ပါနဲ့။ ဥပမာ၊ <code>margin: 0px;</code> အစား <code>margin: 0;</code>။</li>
     </ul>
-    <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
+    <!-- <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p> -->
+    <p>ဒီမှာ သုံးသွားတဲ့ အခေါ်အဝေါ်တွေနဲ့ ပတ်သက်ပြီး မေးစရာရှိမယ်ဆိုရင် Wikipedia <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">the Cascading Style Sheets ဆောင်းပါး</a>ရဲ့ syntax အပိုင်း ကိုကြည့်ပါ။</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/syntax.css %}{% endhighlight %}
@@ -280,16 +281,20 @@ layout: default
 <div class="section" id="css-declaration-order">
   <div class="col">
     <h3>Declaration order</h3>
-    <p>Related property declarations should be grouped together following the order:</p>
+    <!-- <p>Related property declarations should be grouped together following the order:</p> -->
+    <p>သတ်ဆိုင်တဲ့ property declarations တွေကို အောက်ပါ အစီအစဥ်အတိုင်း ပေါင်းရေးသင့်ပါတယ်။</p>
     <ol>
       <li>Positioning</li>
       <li>Box model</li>
       <li>Typographic</li>
       <li>Visual</li>
     </ol>
-    <p>Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.</p>
-    <p>Everything else takes place <em>inside</em> the component or without impacting the previous two sections, and thus they come last.</p>
-    <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
+    <!-- <p>Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.</p> -->
+    <p>Positioning က ဘာကြောင့် အရင်လာရလည်း ဆိုတော့ element ကို document ရဲ့ ပုံမှန် flow ကနေ ဖယ်ထုတ်ပစ်နိုင်ပြီး box model နဲ့ ဆိုင်တဲ့ style တွေကို ပြင်ရေးလိုက်နိုင်လို့ပဲ ဖြစ်ပါတယ်။ အဲ့ဒါပြီးရင်တော့ component နေရာချပုံနဲ့ dimensions နဲ့ ဆိုင်တဲ့ Box model လာပါမယ်။</p>
+    <!-- <p>Everything else takes place <em>inside</em> the component or without impacting the previous two sections, and thus they come last.</p> -->
+    <p>ကျန်တာတွေအကုန်လုံးက component <em>အတွင်းမှာ</em>ဖြစ်တဲ့အရာတွေ၊​ တစ်နည်းအားဖြင့် အရှေ့က အပိုင်းနှစ်ခုကို သက်ရောက်မှု မရှိတာကြောင့် နောက်ဆုံးမှာ ထားတာ ဖြစ်ပါတယ်။</p>
+    <!-- <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p> -->
+    <p>Property တွေနဲ့ သူတို့ အစီအစဥ် အပြည့်အစုံကို <a href="http://twitter.github.com/recess">Recess</a>မှာ သွားရောက်ကြည့်ရှုနိုင်ပါတယ်။</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/declaration-order.css %}{% endhighlight %}
@@ -298,14 +303,20 @@ layout: default
 
 <div class="section" id="css-import">
   <div class="col">
-    <h3>Don't use <code>@import</code></h3>
-    <p>Compared to <code>&lt;link&gt;</code>s, <code>@import</code> is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p>
+    <!-- <h3>Don't use <code>@import</code></h3> -->
+    <h3><code>@import</code> မသုံးပါနှင့်</h3>
+    <!-- <p>Compared to <code>&lt;link&gt;</code>s, <code>@import</code> is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p> -->
+    <p><code>&lt;link&gt;</code> နဲ့ ယှဥ်ရင် <code>@import</code> က ပိုပြီး နှေးပါတယ်။ Page request တွေလည်း ပိုလုပ်ပါတယ်။ မမျှော်လင့်ထားတဲ့ ပြဿနာတွေလည်း ဖြစ်တတ်ပါတယ်။ သူ့ကို ရှောင်ပြီး တစ်ခြားနည်းလမ်း သုံးပါ - </p>
     <ul>
-      <li>Use multiple <code>&lt;link&gt;</code> elements</li>
-      <li>Compile your CSS with a preprocessor like Sass or Less into a single file</li>
-      <li>Concatenate your CSS files with features provided in Rails, Jekyll, and other environments</li>
+      <!-- <li>Use multiple <code>&lt;link&gt;</code> elements</li> -->
+      <li><code>&lt;link&gt;</code> elements များ သုံးပါ။</li>
+      <!-- <li>Compile your CSS with a preprocessor like Sass or Less into a single file</li> -->
+      <li>Sass သို့ Less အစရှိတဲ့ preprocessor တစ်ခုခုသုံးပြီး CSS code တွေကို file တစ်ခုထဲသို့ compile လုပ်ပါ။</li>
+      <!-- <li>Concatenate your CSS files with features provided in Rails, Jekyll, and other environments</li> -->
+      <li>Rails​ ၊​  Jekyll နှင့် တစ်ခြား environment တွေမှာ ပါတဲ့ feature တွေသုံးပြီး CSS file တွေကို ပေါင်းပါ။</li>
     </ul>
-    <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p>
+    <!-- <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p> -->
+    <p>ပိုသိချင်ရင်တော့ <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">Steve Souders ရဲ့ ဒီ ဆောင်းပါး</a>ကို ဖတ်ကြည့်ပါ။</p>
   </div>
   <div class="col">
     {% highlight html %}{% include css/import.html %}{% endhighlight %}
@@ -315,7 +326,8 @@ layout: default
 <div class="section" id="css-media-queries">
   <div class="col">
     <h3>Media query placement</h3>
-    <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes it easier for folks to miss them in the future. Here's a typical setup.</p>
+    <!-- <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes it easier for folks to miss them in the future. Here's a typical setup.</p> -->
+    <p>ဖြစ်နိုင်သမျှ media queriey တွေကို သူတို့နဲ့ ဆိုင်တဲ့ rule set အနီးမှာ ထားပေးပါ။ အားလုံးစုပြီး stylesheet တစ်ခုထဲမှာ ထည့်တာမျိုး၊ document အဆုံးမှာ ထည့်တာမျိုး မလုပ်ပါနဲ့။ အဲ့လိုလုပ်ရင် နောင်မှာ မမြင်ပဲ မေ့ကျန်ခဲ့နိုင်ပါတယ်။ အသုံးများတဲ့ ပုံစံကို ဒီမှာ ကြည့်ပါ။</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/media-queries.css %}{% endhighlight %}
@@ -325,7 +337,9 @@ layout: default
 <div class="section" id="css-prefixed-properties">
   <div class="col">
     <h3>Prefixed properties</h3>
-    <p>When using vendor prefixed properties, indent each property such that the declaration's value lines up vertically for easy multi-line editing.</p>
+    <!-- <p>When using vendor prefixed properties, indent each property such that the declaration's value lines up vertically for easy multi-line editing.</p> -->
+    <p>Vendor prefixed property တွေသုံးတဲ့ အခါမှာ multi-line edit လုပ်ရလွယ်အောင် property တစ်ခုစီကို value အလိုက် ဒေါင်လိုက် စီပေးပါ။</p>
+    <!-- <p>In Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). In Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) and <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;).</p> -->
     <p>In Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). In Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) and <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
   </div>
   <div class="col">
