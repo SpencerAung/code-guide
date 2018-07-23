@@ -350,8 +350,10 @@ layout: default
 <div class="section" id="css-single-declarations">
   <div class="col">
     <h3>Single declarations</h3>
-    <p>In instances where a rule set includes <strong>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.</p>
-    <p>The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p>
+    <!-- <p>In instances where a rule set includes <strong>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.</p> -->
+    <p><strong>Declaration တစ်ခုပဲပါတဲ့</strong> အခါမှာတော့ ဖတ်ရလွယ်၊ ပြင်ရမြန်အောင် rule set မှာ တစ်လိုင်းမဆင်းလို့ရပါတယ်။ တစ်ခုထက်ပိုတဲ့ declaration ဆိုရင်တော့ တစ်လိုင်းစီခွဲပေးပါ။</p>
+    <!-- <p>The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p> -->
+    <p>ဒီနေရာမှာ အဓိကအချက်ကတော့ error ကို ရှာနိုင်ဖို့ဖြစ်ပါတယ်။ ဥပမာ၊ CSS validator (အမှားရှာပေးတဲ့ program)က လိုင်း 183 မှာ ရေးပုံမှားနေတယ်လို့ ပြောတယ်ဆိုပါစို့။ Declaration တစ်ခုထဲဆိုရင် ရှာမတွေ့နိုင်စရာ အကြောင်းမရှိပါဘူး။ Declaration တွေများရင်တော့ လိုင်းသက်သက်စီ ခွဲထားတာက စိတ်မရှုပ်ရပါဘူး။</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/single-declarations.css %}{% endhighlight %}
@@ -361,7 +363,8 @@ layout: default
 <div class="section" id="css-shorthand">
   <div class="col">
     <h3>Shorthand notation</h3>
-    <p>Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values. Common overused shorthand properties include:</p>
+    <!-- <p>Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values. Common overused shorthand properties include:</p> -->
+    <p>တမင်ကြေငြာဖို့လိုတဲ့ အခါကလွဲပြီး value အားလုံးကို အတိုကောက်ရေးတာကို လျော့ဖို့ ကြိုးစားပါ။ အတိုကောက်အဖြစ်နဲ့ အသုံးလွန်တဲ့ property တွေကတော့</p>
     <ul>
       <li><code>padding</code></li>
       <li><code>margin</code></li>
@@ -370,8 +373,11 @@ layout: default
       <li><code>border</code></li>
       <li><code>border-radius</code></li>
     </ul>
-    <p>Often times we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintended side effects.</p>
-    <p>The Mozilla Developer Network has a great article on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a> for those unfamiliar with notation and behavior.</p>
+    <p>တို့ပဲ ဖြစ်ပါတယ်။</p>
+    <!-- <p>Often times we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintended side effects.</p> -->
+    <p>အတိုကောက် ဖော်ပြလို့ရတဲ့ value တိုင်းကို မကြာခဏ သတ်မှတ်ပေးစရာမလိုပါဘူး။ ဥပမာအနေနဲ့၊ HTML heading မှာ top နဲ့ bottom margin ပဲ သတ်မှတ်ကြပါတယ်။ ဒါကြောင့် လိုအပ်တဲ့အခါမှသာ အဲ့ဒီ value နှစ်ခုကို ပြင်ရေးပါ။ အတိုကောက် property တွေကို အလွန်အကျွံသုံးခြင်းအားဖြင့် မလိုအပ်ပဲ ပြင်ရေးမိတာ(overwrite)၊ မရည်ရွယ်တဲ့ အကျိုးသက်ရောက်မှုတွေဖြစ်ပြီး အမှားများတဲ့ code ဖြစ်စေတတ်ပါတယ်။ </p>
+    <!-- <p>The Mozilla Developer Network has a great article on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a> for those unfamiliar with notation and behavior.</p> -->
+    <p>အတိုကောက် ရေးပုံရေးနည်းနဲ့ သူတို့ ဘယ်လိုအလုပ်လုပ်လဲဆိုတာ သိချင်တဲ့ လူတွေအတွက် Mozilla Developer Network မှာ<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a> ဆိုတဲ့ အရမ်းကောင်းတဲ့ ဆောင်းပါးတစ်ပုဒ်ရှိပါတယ်။</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/shorthand.css %}{% endhighlight %}
@@ -381,8 +387,10 @@ layout: default
 <div class="section" id="css-nesting">
   <div class="col">
     <h3>Nesting in Less and Sass</h3>
-    <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.</p>
-    <p>Additional reading:</p>
+    <!-- <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.</p> -->
+    <p>မလိုအပ်ပဲ nesting လုပ်ခြင်းကို ရှောင်ပါ။ Nesting လုပ်လို့ရတယ်ဆိုတိုင်း အမြဲမလုပ်သင့်ပါ။ Parent scope အတွက် style ရေးဖို့လိုတာမျိုး၊ element အရေအတွက်များများကို nest လုပ်ဖို့လိုတာမျိုးမှသာ nesting လုပ်ဖို့ စဥ်းစားပါ။</p>
+    <!-- <p>Additional reading:</p> -->
+    <p>ဆက်လက် ဖတ်ရန်၊</p>
     <ul>
       <li><a href="http://markdotto.com/2015/07/20/css-nesting/">Nesting in Sass and Less</a></li>
     </ul>
@@ -395,7 +403,8 @@ layout: default
 <div class="section" id="css-operators">
   <div class="col">
     <h3>Operators in Less and Sass</h3>
-    <p>For improved readability, wrap all math operations in parentheses with a single space between values, variables, and operators.</p>
+    <!-- <p>For improved readability, wrap all math operations in parentheses with a single space between values, variables, and operators.</p> -->
+    <p>သင်္ချာ အတွက်အချက်ရေးတဲ့အခါ ဖတ်ရလွယ်အောင် တန်ဖိုး၊ ကိန်းဂဏန်း၊ သင်္ကေတတွေကြားမှာ space တစ်ခုခံပြီး ကွင်းစ၊ ကွင်းပိတ်နဲ့ ထည့်ရေးပေးပါ။</p>
   </div>
   <div class="col">
     {% highlight scss %}{% include css/operators.scss %}{% endhighlight %}
@@ -405,8 +414,10 @@ layout: default
 <div class="section" id="css-comments">
   <div class="col">
     <h3>Comments</h3>
-    <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose. Do not simply reiterate a component or class name.</p>
-    <p>Be sure to write in complete sentences for larger comments and succinct phrases for general notes.</p>
+    <!-- <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose. Do not simply reiterate a component or class name.</p> -->
+    <p>Code ကို ရေးသား ထိန်းသိမ်းပြုပြင်သူများမှာ လူတွေပဲ ဖြစ်ပါတယ်။ အဲ့ဒါကြောင့် မိမိ code ကို သူများ နားလည်လွယ်အောင် comment များနှင့် ရည်ရွယ်ချက်ကို ရှင်းလင်းအောင် ရေးသားပေးပါ။ ကောင်းမွန်တဲ့ code မှာ အကြောင်းအရာနဲ့ ရည်ရွယ်ချက်ကို comment များမှာ ဖော်ပြထားပါတယ်။ Component သို့ class name ကို ဒီအတိုင်းပြန်မရေးပါနဲ့။</p>
+    <!-- <p>Be sure to write in complete sentences for larger comments and succinct phrases for general notes.</p> -->
+    <p>Comment များရင် ဝါကျ အပြည့်အစုံနဲ့ ရေးပြီး မှတ်စုကြမ်းများကို စကားစု အတိုများဖြင့် ရေးပါ။ </p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/comments.css %}{% endhighlight %}
@@ -417,14 +428,21 @@ layout: default
   <div class="col">
     <h3>Class names</h3>
     <ul>
-      <li>Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., <code>.btn</code> and <code>.btn-danger</code>).</li>
-      <li>Avoid excessive and arbitrary shorthand notation. <code>.btn</code> is useful for <em>button</em>, but <code>.s</code> doesn't mean anything.</li>
-      <li>Keep classes as short and succinct as possible.</li>
-      <li>Use meaningful names; use structural or purposeful names over presentational.</li>
-      <li>Prefix classes based on the closest parent or base class.</li>
-      <li>Use <code>.js-*</code> classes to denote behavior (as opposed to style), but keep these classes out of your CSS.</li>
+      <!-- <li>Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., <code>.btn</code> and <code>.btn-danger</code>).</li> -->
+      <li>Class name တွေကို စကားလုံးအသေးနှင့် dash သုံးပါ။​ (underscore သို့ camelCase မသုံးပါနှင့်)။ ဆက်စပ်နေတဲ့ class တွေကို ပုံမှန်အားဖြင့် dash နဲ့ခွဲပါတယ်။ (ဥပမာ၊​ <code>.btn</code> နှင့်  <code>.btn-danger</code>)</li>
+      <!-- <li>Keep classes as short and succinct as possible.</li> -->
+      <li>တတ်နိုင်သလောက် class name တွေကို တိုတိုနှင့် လိုရင်းသတ်မှတ်ပါ။</li>
+      <!-- <li>Avoid excessive and arbitrary shorthand notation. <code>.btn</code> is useful for <em>button</em>, but <code>.s</code> doesn't mean anything.</li> -->
+      <li>အလွန်အကျွံ နာမည် အတိုကောက်ပေးခြင်းကို ရှောင်ပါ။ <em>button</em> ကို <code>.btn</code> လို့ပေးတာ အသုံးဝင်ပေမဲ့ <code>.s</code> ဆိုတာမျိုးကတော့ ဘာအဓိပ္ပါယ်မှ မသက်ရောက်ပါ။</li>
+      <!-- <li>Use meaningful names; use structural or purposeful names over presentational.</li> -->
+      <li>အဓိပ္ပါယ်ရှိတဲ့ နာမည်သုံးပါ။ အမြင်အရပေးတာထက် လုပ်ဆောင်ပုံ၊ တည်ဆောက်ပုံအရ ပေးပါ။ </li>
+      <!-- <li>Prefix classes based on the closest parent or base class.</li> -->
+      <li>အနီးဆုံး parent သို့ base class နာမည်ပေါ် မူတည်ပြီး class နာမည် အစ (prefix) ကို သတ်မှတ်ပါ။</li>
+      <!-- <li>Use <code>.js-*</code> classes to denote behavior (as opposed to style), but keep these classes out of your CSS.</li> -->
+      <li>(style နှင့် ဆန့်ကျင်ဖက်ဖြစ်သော)လုပ်ဆောင်ပုံကို သတ်မှတ်ရာတွင် class များကို <code>.js-*</code> နှင့်စပေးပါ။ သို့သော် ထို​ class များကို CSS မှာ ထည့်မရေးပါနှင့်။</li>
     </ul>
-    <p>It's also useful to apply many of these same rules when creating Sass and Less variable names.</p>
+    <!-- <p>It's also useful to apply many of these same rules when creating Sass and Less variable names.</p> -->
+    <p>Sass နှင့် Less variable အမည်များ သတ်မှတ်ရာတွင်လည်း ဤစည်းမျဥ်းများကို အသုံးပြုနိုင်ပါသည်။</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/class-names.css %}{% endhighlight %}
@@ -435,12 +453,17 @@ layout: default
   <div class="col">
     <h3>Selectors</h3>
     <ul>
-      <li>Use classes over generic element tag for optimum rendering performance.</li>
-      <li>Avoid using several attribute selectors (e.g., <code>[class^="..."]</code>) on commonly occuring components. Browser performance is known to be impacted by these.</li>
-      <li>Keep selectors short and strive to limit the number of elements in each selector to three.</li>
-      <li>Scope classes to the closest parent <strong>only</strong> when necessary (e.g., when not using prefixed classes).</li>
+      <!-- <li>Use classes over generic element tag for optimum rendering performance.</li> -->
+      <li>Rendering performance အကောင်းဆုံးဖြစ်အောင် element tag အစား class ကို သုံးပါ။</li>
+      <!-- <li>Avoid using several attribute selectors (e.g., <code>[class^="..."]</code>) on commonly occuring components. Browser performance is known to be impacted by these.</li> -->
+      <li>အမြဲသုံးတဲ့ component တွေကို attribute selectors အများအပြားသုံးခြင်းကို ရှောင်ပါ။ (ဥပမာ၊​ <code>[class^="..."</code>)။ ထိုသို့လုပ်ခြင်းသည် browser စွမ်းဆောင်ရည်ကို ထိခိုက်စေတယ်လို့ သိထားပါသည်။</li>
+      <!-- <li>Keep selectors short and strive to limit the number of elements in each selector to three.</li> -->
+      <li>Selector များကို တိုအောင်ထားပါ။ Selector တစ်ခုမှာ element သုံးခု အထိပဲ ကြိုးစား သတ်မှတ်ပေးပါ။</li>
+      <!-- <li>Scope classes to the closest parent <strong>only</strong> when necessary (e.g., when not using prefixed classes).</li> -->
+      <li>လိုအပ်ရင် class ကို အနီးဆုံး parent scope <strong>တစ်ခုထဲ</strong>မှာပဲထားပေးပါ။ (ဥပမာ၊ prefixed class တွေ မသုံးတဲ့ အခါ)</li>
     </ul>
-    <p>Additional reading:</p>
+    <!-- <p>Additional reading:</p> -->
+    <p>ဆက်လက် ဖတ်ရှုရန်၊</p>
     <ul>
       <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a></li>
       <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a></li>
@@ -455,10 +478,14 @@ layout: default
   <div class="col">
     <h3>Organization</h3>
     <ul>
-      <li>Organize sections of code by component.</li>
-      <li>Develop a consistent commenting hierarchy.</li>
-      <li>Use consistent white space to your advantage when separating sections of code for scanning larger documents.</li>
-      <li>When using multiple CSS files, break them down by component instead of page. Pages can be rearranged and components moved.</li>
+      <!-- <li>Organize sections of code by component.</li> -->
+      <li>Component အလိုက် code ကို အပိုင်းခွဲပြီး ထိန်းသိမ်းပါ။</li>
+      <!-- <li>Develop a consistent commenting hierarchy.</li> -->
+      <li>Comment များကို တသမတ်တည်းပေးတဲ့ အစဥ်အလာကို တည်ဆောက်ပါ။</li>
+      <!-- <li>Use consistent white space to your advantage when separating sections of code for scanning larger documents.</li> -->
+      <li>ကြီးမားတဲ့ document တွေမှာ လျှပ်တပြက်ကြည့်နိုင်ရန် white space ကို တူညီစွာသုံးပြီး code အပိုင်းခွဲပါ။ </li>
+      <!-- <li>When using multiple CSS files, break them down by component instead of page. Pages can be rearranged and components moved.</li> -->
+      <li>CSS file များကို page အစား component အလိုက်ခွဲပါ။ Page တွေ ပြောင်းလဲနိုင်သလို component တွေလဲ နေရာရွေ့နိုင်ပါတယ်။ </li>
     </ul>
   </div>
   <div class="col">
@@ -469,13 +496,19 @@ layout: default
 <div class="section" id="css-editor-prefs">
   <div class="col">
     <h3>Editor preferences</h3>
-    <p>Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:</p>
+    <!-- <p>Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:</p> -->
+    <p>Dirty diffs နဲ့ အဖြစ်များတဲ့ code အလွဲတွေကို ရှောင်ရှားရန် သင့် editorကို အောက်ပါ setting များ သက်မှတ်ပေးပါ၊ </p>
     <ul>
-      <li>Use soft-tabs set to two spaces.</li>
-      <li>Trim trailing white space on save.</li>
-      <li>Set encoding to UTF-8.</li>
-      <li>Add new line at end of files.</li>
+      <!-- <li>Use soft-tabs set to two spaces.</li> -->
+      <li>Space နှစ်ချက်စာအတွက် soft-tab ကိုသုံးပါ။</li>
+      <!-- <li>Trim trailing white space on save.</li> -->
+      <li>Save လုပ်ချိန်မှာ white space အဆုံးသတ်များကို ဖျက်ထုတ်ပေးပါ။</li>
+      <!-- <li>Set encoding to UTF-8.</li> -->
+      <li>UTF-8 encoding သုံးပါ။</li>
+      <!-- <li>Add new line at end of files.</li> -->
+      <li>File အဆုံးမှာ လိုင်းအသစ်တစ်ခု ထည့်ပေးပါ။</li>
     </ul>
-    <p>Consider documenting and applying these preferences to your project's <code>.editorconfig</code> file. For an example, see <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">the one in Bootstrap</a>. Learn more <a href="http://editorconfig.org">about EditorConfig</a>.</p>
+    <!-- <p>Consider documenting and applying these preferences to your project's <code>.editorconfig</code> file. For an example, see <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">the one in Bootstrap</a>. Learn more <a href="http://editorconfig.org">about EditorConfig</a>.</p> -->
+    <p>Project ရဲ့ <code>.editorconfig</code> file မှာ စောစောက အချက်တွေကို ထည့်ရေးကြည့်ပါ။ ဥပမာအားဖြင့် <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">Bootstrap မှာ ဘယ်လိုလုပ်ထားလဲဆိုတာ</a>ကို ကြည့်ပါ။. <a href="http://editorconfig.org">EditorConfig</a> အကြောင်း ဒီမှာ ဆက်လေ့လာနိုင်ပါတယ်။</p>
   </div>
 </div>
